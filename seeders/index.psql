@@ -1,0 +1,1 @@
+\copy users (first_name,last_name,email,phone_number,password,avatar) FROM '/home/clint/Projects/grovider/grovider-api/seeders/users.csv' CSV;

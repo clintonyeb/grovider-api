@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "driver": {"ENV": "DB_DIALECT"},
+    "user": {"ENV": "PGUSER"},
+    "password": {"ENV": "PGPASSWORD"},
+    "database": {"ENV": "PGDATABASE"},
+    "host": {"ENV": "PGHOST"}
+  },
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+  "prod": {
+    "driver": {"ENV": "DB_DIALECT"},
+    "user": {"ENV": "PGUSER"},
+    "password": {"ENV": "PGPASSWORD"},
+    "database": {"ENV": "PGDATABASE"},
+    "host": {"ENV": "PGHOST"}
+  }
+}
